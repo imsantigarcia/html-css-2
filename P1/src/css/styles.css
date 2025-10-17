@@ -1,0 +1,78 @@
+/* =======
+Ajustes generales
+======= */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    max-width: 1240px;
+    margin: auto;
+}
+
+section {
+    margin: 3rem 0rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem 0rem;
+    background-color: aliceblue;
+}
+
+/* =======
+Estilos del header
+======= */
+
+nav {
+    padding: 2rem 0rem;
+    background-color: aliceblue;
+}
+
+nav ul {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.ajustar-ancho {
+    max-width: 1240px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+/* =======
+Estilos del body
+======= */
+
+/* =======
+Estilos del hero
+======= */
+
+/* =======
+Estilos de "qué ver"
+======= */
+
+/* =======
+Estilos de "rutas modernistas"
+======= */
+
+/* =======
+Estilos de "dónde comer"
+======= */
+
+
+/* =======
+Estilos de "dónde dormir
+======= */
