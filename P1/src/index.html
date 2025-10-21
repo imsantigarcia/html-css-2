@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Escribir la descripción">
         <meta name="author" content="Santiago García">
-        <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
+        <link rel="icon" href="../src/assets/images/aerea.png" type="image/png" sizes="32x32">
         <title>Discover Reus</title>
         <!--Hoja de estilos-->
         <link rel="stylesheet" href="css/styles.css">
@@ -26,9 +26,9 @@
             <nav aria-label="Menú principal">
                 <!--Contenedor Logo/SVG-->
                 <div class="ajustar-ancho">
-                    <div class="">
+                    <div class="logo">
                         <!--Logo-->
-                        <a href="index.html" class="">Discover Reus</a>
+                        Discover Reus
                     </div>
                     <!--Menú-->
                     <ul class="">
@@ -55,133 +55,213 @@
         <!--Main-->
         <main>
             <!--Above the folder-->
-            <section>
-                <div>
+            <section class="hero">
+                <video autoplay muted loop class="hero-video">
+                    <source src="../src/assets/video/video.mp4">
+                </video>
+                <div class="abv">
                     <!--H1-->
-                    <h1>Título de prueba</h1>
+                    <h1>Descubre Reus, la capital del Baix Camp</h1>
                     <!--Descripción-->
-                    <p>Párrafo de prueba</p>
+                    <p>Descubre la cuna de Antoni Gaudí, el General Prim y Marià Fortuny</p>
                     <!--Llamada a la acción-->
-                    <a href="/index.html" aria-label="" class="">Descubrir la ciudad</a>
+                    <a href="#rutas" aria-label="" class="cta">Descubrir la ciudad</a>
                 </div>
             </section>
 
             <!--Presentación de la destinación-->
-            <section id="inicio">
+            <section id="inicio" class="limitar-ancho ocultar">
                 <!--Container-->
-                <div>
+                <div class="linea">
+                  <img src="../src/assets/images/aerea.png" width="450" height="450" alt="" class="">
+                  <div>
                     <!--H2: encabezado de la sección-->
                     <h2>Reus, la ciudad modernista</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum venenatis faucibus. Sed ut molestie dolor, ac luctus ex. Vivamus lorem nunc, ornare in vestibulum id, dictum sit amet dui. Curabitur finibus eu mauris ac placerat.</p>
+                    <p class="linea-parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum venenatis faucibus. Sed ut molestie dolor, ac luctus ex. Vivamus lorem nunc, ornare in vestibulum id, dictum sit amet dui. Curabitur finibus eu mauris ac placerat.</p>
+                    </div>
                 </div>
             </section>
 
-            <!--Sección: Rutas modernistas-->
-            <section id="rutas">
+            <!--Sección: Imprescindibiles-->
+            <section id="comer" class="limitar-ancho">
                 <!--Encabezado-->
-                <div>
+                <div class="encabezado">
                     <!--H2: encabezado de la sección-->
-                    <h2>Rutas modernistas</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h2>Los imprescindibles</h2>
+                    <p>Lugares únicos que no te puedes perder</p>
                 </div>
 
                 <!--Rejilla con las rutas-->
                 <div>
                     <!--Enumeración de elementos-->
-                    <ul>
-                        <!--Elemento de lista-->
-                        <li>
-                            <img src="" width="" height="" alt="" class="">
-                            <h3>Título de la ruta</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ul class="ul-que-ver">
+                        <!--Elemento de lista 1: Casa Navàs-->
+                        <li class="que-ver">
+                            <img src="../src/assets/images/casa-navas.png" width="150" height="150" alt="" class="que-ver-img">
+                            <div class="que-ver-div">
+                              <!--H3-->
+                              <h3>La Casa Navàs</h3>
+                              <!--Descripción-->
+                              <p>Edificio modernista único, obra de Domènech i Montaner.</p>
+                            </div>
                         </li>    
 
-                        <!--Elemento de lista-->
-                        <li>
-                            <img src="" width="" height="" alt="" class="">
-                            <h3>Título de la ruta</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <!--Elemento de lista 2: General Prim-->
+                        <li class="que-ver">
+                            <img src="../src/assets/images/general-rim.png" width="150" height="150" alt="" class="que-ver-img">
+                            <div class="que-ver-div">
+                              <!--H3-->
+                              <h3>General Prim</h3>
+                              <!--Descripción-->
+                              <p>Militar y político reusense que llegó a ser presidente del Gobierno.</p>
+                            </div>
+                        </li>    
+
+                        <!--Elemento de lista 3: Gaudí Centre-->
+                        <li class="que-ver">
+                            <img src="../src/assets/images/gaudi-centre.png" width="150" height="150" alt="" class="que-ver-img">
+                            <div class="que-ver-div">
+                              <!--H3-->
+                              <h3>El Gaudí Centre</h3>
+                              <!--Descripción-->
+                              <p>Espacio interactivo que explica la vida y obra del genial arquitecto.</p>
+                            </div>
                         </li>
 
-                        <!--Elemento de lista-->
-                        <li>
-                            <img src="" width="" height="" alt="" class="">
-                            <h3>Título de la ruta</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </li>   
+                        <!--Elemento de lista 4: Casa Serra-->
+                        <li class="que-ver">
+                            <img src="../src/assets/images/casa-serra.png" width="150" height="150" alt="" class="que-ver-img">
+                            <div class="que-ver-div">
+                              <!--H3-->
+                              <h3>La Casa Serra</h3>
+                              <!--Descripción-->
+                              <p>Palacete modernista con detalles de piedra y hierro forjado.</p>
+                            </div>
+                        </li>    
+
+                        <!--Elemento de lista 5: Institut Pere Mata-->
+                        <li class="que-ver">
+                            <img src="../src/assets/images/institut-pere.png" width="150" height="150" alt="" class="que-ver-img">
+                            <div class="que-ver-div">
+                              <!--H3-->
+                              <h3>El Institut Pere Mata</h3>
+                              <!--Descripción-->
+                              <p>Complejo psiquiátrico modernista diseñado por Lluís Domènech i Montaner.</p>
+                            </div>
+                        </li>    
+
+                        <!--Elemento de lista 6: Prioral Sant Pere-->
+                        <li class="que-ver">
+                            <img src="../src/assets/images/sant-pere.png" width="150" height="150" alt="" class="que-ver-img">
+                            <div class="que-ver-div">
+                              <!--H3-->
+                              <h3>La prioral Sant Pere</h3>
+                              <!--Descripción-->
+                              <p>Iglesia gótica que domina el centro histórico del Baix Camp.</p>
+                            </div>
+                        </li>
                 </ul>
                 </div>
             </section>
 
-            <!--Sección: Dónde comer-->
-            <section id="comer">
+            <!--Sección: Productos tradicionales-->
+            <section id="rutas" class="limitar-ancho">
                 <!--Encabezado-->
-                <div>
+                <div class="encabezado">
                     <!--H2: encabezado de la sección-->
-                    <h2>Dónde comer</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h2>Productos tradicionales</h2>
+                    <p>Los sabores de la capital del Baix Camp</p>
                 </div>
 
                 <!--Rejilla con las rutas-->
                 <div>
                     <!--Enumeración de elementos-->
-                    <ul>
-                        <!--Elemento de lista-->
-                        <li>
-                            <img src="" width="" height="" alt="" class="">
-                            <h3>Título de la ruta</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ul class="ul-que-ver">
+                        <!--Elemento de lista 1: Menjablanc-->
+                        <li class="que-comer">
+                            <img src="../src/assets/images/mblanc.jpg" width="150" height="150" alt="" class="que-comer-img">
+                            <div class="que-ver-div">
+                              <!--H3-->
+                              <h3>El menjablanc</h3>
+                              <!--Descripción-->
+                              <p>Postre tradicional, sencillez y refinamiento en una receta que ha sobrevivido siglos.</p>
+                            </div>
                         </li>    
 
-                        <!--Elemento de lista-->
-                        <li>
-                            <img src="" width="" height="" alt="" class="">
-                            <h3>Título de la ruta</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </li>
+                        <!--Elemento de lista 2: Avellanas-->
+                        <li class="que-comer">
+                            <img src="../src/assets/images/avellanas.png" width="150" height="150" alt="" class="que-comer-img">
+                            <div class="que-ver-div">
+                              <!--H3-->
+                              <h3>Las avellanas</h3>
+                              <!--Descripción-->
+                              <p>Fruto emblemático del Camp de Reus, las avellanas son el orgullo agrícola de la comarca</p>
+                            </div>
+                        </li>    
 
-                        <!--Elemento de lista-->
-                        <li>
-                            <img src="" width="" height="" alt="" class="">
-                            <h3>Título de la ruta</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <!--Elemento de lista 3: Plim-->
+                        <li class="que-comer">
+                            <img src="../src/assets/images/plim.jpg" width="150" height="150" alt="" class="que-comer-img">
+                            <div class="que-ver-div">
+                              <!--H3-->
+                              <h3>El refresco Plim</h3>
+                              <!--Descripción-->
+                              <p>De color rojo brillante, sin azúcar y sabor a grosella, se embotellaba artesanalmente.</p>
+                            </div>
                         </li>
+                </ul>
+                </div>
             </section>
 
             <!--Sección: Dónde dormir-->
-            <section id="dormir">
+            <section id="dormir" class="limitar-ancho">
                 <!--Encabezado-->
-                <div>
+                <div class="encabezado">
                     <!--H2: encabezado de la sección-->
-                    <h2>Dónde dormir</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h2>Dónd dormir</h2>
+                    <p>Descubre alojamientos con encanto</p>
                 </div>
 
                 <!--Rejilla con las rutas-->
                 <div>
                     <!--Enumeración de elementos-->
-                    <ul>
-                        <!--Elemento de lista-->
-                        <li>
-                            <img src="" width="" height="" alt="" class="">
-                            <h3>Título de la ruta</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ul class="ul-que-ver">
+                        <!--Elemento de lista 1: Casa Navàs-->
+                        <li class="que-ver">
+                            <img src="../src/assets/images/hotel1.png" width="150" height="150" alt="" class="que-ver-img">
+                            <div class="que-ver-div">
+                              <!--H3-->
+                              <h3>El Hotel Caselles</h3>
+                              <!--Descripción-->
+                              <p>Hotel modernista de Domènech i Montaner en Reus.</p>
+                            </div>
                         </li>    
 
-                        <!--Elemento de lista-->
-                        <li>
-                            <img src="" width="" height="" alt="" class="">
-                            <h3>Título de la ruta</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </li>
+                        <!--Elemento de lista 2: General Prim-->
+                        <li class="que-ver">
+                            <img src="../src/assets/images/hotel2.png" width="150" height="150" alt="" class="que-ver-img">
+                            <div class="que-ver-div">
+                              <!--H3-->
+                              <h3>El Hotel Gaudí</h3>
+                              <!--Descripción-->
+                              <p>Hotel céntrico inspirado en el genio reusense Gaudí.</p>
+                            </div>
+                        </li>    
 
-                        <!--Elemento de lista-->
-                        <li>
-                            <img src="" width="" height="" alt="" class="">
-                            <h3>Título de la ruta</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <!--Elemento de lista 3: Gaudí Centre-->
+                        <li class="que-ver">
+                            <img src="../src/assets/images/hotel3.png" width="150" height="150" alt="" class="que-ver-img">
+                            <div class="que-ver-div">
+                              <!--H3-->
+                              <h3>El Hotel Sugranyes</h3>
+                              <!--Descripción-->
+                              <p>Hotel interactivo dedicado a la obra de Gaudí.</p>
+                            </div>
                         </li>
+                </ul>
+                </div>
             </section>
+
         </main>
 
     <!--Footer-->
