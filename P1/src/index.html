@@ -5,7 +5,7 @@
         <!--Metadatos-->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Escribir la descripción">
+        <meta name="description" content="Guía visual para descubrir Reus: rutas, gastronomía y alojamiento">
         <meta name="author" content="Santiago García">
         <link rel="icon" href="../src/assets/images/aerea.png" type="image/png" sizes="32x32">
         <title>Discover Reus</title>
@@ -16,6 +16,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <!-- CSS de AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <!-- JS de AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap"></noscript>
     </head>
     <!--Body-->
@@ -28,7 +32,7 @@
                 <div class="ajustar-ancho">
                     <div class="logo">
                         <!--Logo-->
-                        Discover Reus
+                        Discover
                     </div>
                     <!--Menú-->
                     <ul class="">
@@ -65,7 +69,7 @@
                     <!--Descripción-->
                     <p>Descubre la cuna de Antoni Gaudí, el General Prim y Marià Fortuny</p>
                     <!--Llamada a la acción-->
-                    <a href="#rutas" aria-label="" class="cta">Descubrir la ciudad</a>
+                    <a href="#rutas" aria-label="Ir a la sección de Imprescindibiles" class="cta">Descubrir la ciudad</a>
                 </div>
             </section>
 
@@ -83,7 +87,7 @@
             </section>
 
             <!--Sección: Imprescindibiles-->
-            <section id="comer" class="limitar-ancho">
+            <section id="comer" class="limitar-ancho" data-aos="fade-in">
                 <!--Encabezado-->
                 <div class="encabezado">
                     <!--H2: encabezado de la sección-->
@@ -97,7 +101,7 @@
                     <ul class="ul-que-ver">
                         <!--Elemento de lista 1: Casa Navàs-->
                         <li class="que-ver">
-                            <img src="../src/assets/images/casa-navas.png" width="150" height="150" alt="" class="que-ver-img">
+                            <img src="../src/assets/images/casa-navas.png" width="150" height="150" alt="Fotografía de la fachada frontal de la Casa Navàs en un día soleado" class="que-ver-img" loading="lazy">
                             <div class="que-ver-div">
                               <!--H3-->
                               <h3>La Casa Navàs</h3>
@@ -108,7 +112,7 @@
 
                         <!--Elemento de lista 2: General Prim-->
                         <li class="que-ver">
-                            <img src="../src/assets/images/general-rim.png" width="150" height="150" alt="" class="que-ver-img">
+                            <img src="../src/assets/images/general-rim.png" width="150" height="150" alt="Fotografía de la estatua del General Prim en la Plaça Prim de Reus, con algunas nubes de fondo" class="que-ver-img" loading="lazy">
                             <div class="que-ver-div">
                               <!--H3-->
                               <h3>General Prim</h3>
@@ -119,7 +123,7 @@
 
                         <!--Elemento de lista 3: Gaudí Centre-->
                         <li class="que-ver">
-                            <img src="../src/assets/images/gaudi-centre.png" width="150" height="150" alt="" class="que-ver-img">
+                            <img src="../src/assets/images/gaudi-centre.png" width="150" height="150" alt="Fotografía de la fachada frontal del Gaudí Centre, situado en la plaça Mercadal de Reus, un día soleado" class="que-ver-img" loading="lazy">
                             <div class="que-ver-div">
                               <!--H3-->
                               <h3>El Gaudí Centre</h3>
@@ -130,7 +134,7 @@
 
                         <!--Elemento de lista 4: Casa Serra-->
                         <li class="que-ver">
-                            <img src="../src/assets/images/casa-serra.png" width="150" height="150" alt="" class="que-ver-img">
+                            <img src="../src/assets/images/casa-serra.png" width="150" height="150" alt="Fotografía de la fachada frontal de la Casa Serra (Reus) al atardecer" class="que-ver-img">
                             <div class="que-ver-div">
                               <!--H3-->
                               <h3>La Casa Serra</h3>
@@ -141,7 +145,7 @@
 
                         <!--Elemento de lista 5: Institut Pere Mata-->
                         <li class="que-ver">
-                            <img src="../src/assets/images/institut-pere.png" width="150" height="150" alt="" class="que-ver-img">
+                            <img src="../src/assets/images/institut-pere.png" width="150" height="150" alt="Fotografía de perfil de la fachada del Institut Pee Mata. Se aprecia la vegetación de la entrada." class="que-ver-img" loading="lazy">
                             <div class="que-ver-div">
                               <!--H3-->
                               <h3>El Institut Pere Mata</h3>
@@ -152,7 +156,7 @@
 
                         <!--Elemento de lista 6: Prioral Sant Pere-->
                         <li class="que-ver">
-                            <img src="../src/assets/images/sant-pere.png" width="150" height="150" alt="" class="que-ver-img">
+                            <img src="../src/assets/images/sant-pere.png" width="150" height="150" alt="Fotografía de la prioral de Sant Pere de Reus al amanecer" class="que-ver-img" loading="lazy">
                             <div class="que-ver-div">
                               <!--H3-->
                               <h3>La prioral Sant Pere</h3>
@@ -165,7 +169,7 @@
             </section>
 
             <!--Sección: Productos tradicionales-->
-            <section id="rutas" class="limitar-ancho">
+            <section id="rutas" class="limitar-ancho" data-aos="fade-up">
                 <!--Encabezado-->
                 <div class="encabezado">
                     <!--H2: encabezado de la sección-->
@@ -179,7 +183,7 @@
                     <ul class="ul-que-ver">
                         <!--Elemento de lista 1: Menjablanc-->
                         <li class="que-comer">
-                            <img src="../src/assets/images/mblanc.jpg" width="150" height="150" alt="" class="que-comer-img">
+                            <img src="../src/assets/images/mblanc.jpg" width="150" height="150" alt="Un vaso de postre en el que está servido el Menjablanc junto a una cuchara y un par de avellanas, sobre una mesa de madera" class="que-comer-img" loading="lazy">
                             <div class="que-ver-div">
                               <!--H3-->
                               <h3>El menjablanc</h3>
@@ -190,18 +194,18 @@
 
                         <!--Elemento de lista 2: Avellanas-->
                         <li class="que-comer">
-                            <img src="../src/assets/images/avellanas.png" width="150" height="150" alt="" class="que-comer-img">
+                            <img src="../src/assets/images/avellanas.png" width="150" height="150" alt="Un puñado de avellanas de Reus sobre una mesa de madera y un saco de las mismas" class="que-comer-img" loading="lazy">
                             <div class="que-ver-div">
                               <!--H3-->
                               <h3>Las avellanas</h3>
                               <!--Descripción-->
-                              <p>Fruto emblemático del Camp de Reus, las avellanas son el orgullo agrícola de la comarca</p>
+                              <p>Fruto emblemático del Camp, las avellanas son el orgullo agrícola de la comarca</p>
                             </div>
                         </li>    
 
                         <!--Elemento de lista 3: Plim-->
                         <li class="que-comer">
-                            <img src="../src/assets/images/plim.jpg" width="150" height="150" alt="" class="que-comer-img">
+                            <img src="../src/assets/images/plim.jpg" width="150" height="150" alt="Vaso y botellín de la Bebida Plim, en la que puede verse que el líquido es de color rojo intenso, sobre una mesa de madera" class="que-comer-img" loading="lazy">
                             <div class="que-ver-div">
                               <!--H3-->
                               <h3>El refresco Plim</h3>
@@ -214,11 +218,11 @@
             </section>
 
             <!--Sección: Dónde dormir-->
-            <section id="dormir" class="limitar-ancho">
+            <section id="dormir" class="limitar-ancho" data-aos="fade-in">
                 <!--Encabezado-->
                 <div class="encabezado">
                     <!--H2: encabezado de la sección-->
-                    <h2>Dónd dormir</h2>
+                    <h2>Dónde dormir</h2>
                     <p>Descubre alojamientos con encanto</p>
                 </div>
 
@@ -226,9 +230,9 @@
                 <div>
                     <!--Enumeración de elementos-->
                     <ul class="ul-que-ver">
-                        <!--Elemento de lista 1: Casa Navàs-->
+                        <!--Elemento de lista 1: Hotel Caselles-->
                         <li class="que-ver">
-                            <img src="../src/assets/images/hotel1.png" width="150" height="150" alt="" class="que-ver-img">
+                            <img src="../src/assets/images/hotel1.png" width="150" height="150" alt="Fotografía de la fachada frontal del hotel Caselles, con un coche de época delante" class="que-ver-img" loading="lazy">
                             <div class="que-ver-div">
                               <!--H3-->
                               <h3>El Hotel Caselles</h3>
@@ -237,9 +241,9 @@
                             </div>
                         </li>    
 
-                        <!--Elemento de lista 2: General Prim-->
+                        <!--Elemento de lista 2: Hotel Gaudí-->
                         <li class="que-ver">
-                            <img src="../src/assets/images/hotel2.png" width="150" height="150" alt="" class="que-ver-img">
+                            <img src="../src/assets/images/hotel2.png" width="150" height="150" alt="Atardecer sobre el Hotel Gaudí, en un paseo de palmeras, con algunas personas paseando por la acera" class="que-ver-img" loading="lazy">
                             <div class="que-ver-div">
                               <!--H3-->
                               <h3>El Hotel Gaudí</h3>
@@ -248,9 +252,9 @@
                             </div>
                         </li>    
 
-                        <!--Elemento de lista 3: Gaudí Centre-->
+                        <!--Elemento de lista 3: Hotel Sugranyes-->
                         <li class="que-ver">
-                            <img src="../src/assets/images/hotel3.png" width="150" height="150" alt="" class="que-ver-img">
+                            <img src="../src/assets/images/hotel3.png" width="150" height="150" alt="Fachada del hotel Sugranyes, con el tranvía cruzando de izquierda a derecha" class="que-ver-img" loading="lazy">
                             <div class="que-ver-div">
                               <!--H3-->
                               <h3>El Hotel Sugranyes</h3>
@@ -273,5 +277,9 @@
             <p>Herramientas HTML y CSS 2</p>
         </div>
     </footer>
+    <!--Script de AOS-->
+    <script>
+    AOS.init();
+    </script>
     </body>
 </html>

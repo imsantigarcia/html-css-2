@@ -53,6 +53,12 @@ nav {
     color:white;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .logo {
     font-size: 1.4rem;
 }
@@ -137,8 +143,8 @@ Estilos del hero
     width: max-content;
     margin: auto;
     text-decoration: none;
-    background-color: #257c8a;
-    padding: 0.8rem 0.6rem;
+    background-color: #304adb;
+    padding: 0.8rem 0.8rem;
     color: white;
     border-radius: 5px;
 }
@@ -217,7 +223,7 @@ Estilos de "dónde comer"
     flex-direction: column;
     gap: 1rem;
     background-color: #f0b2702f;
-    padding: 0.75rem;
+    padding: 1.2rem;
     border-radius: 5px;
 }
 
@@ -228,6 +234,45 @@ Estilos de "dónde comer"
 }
 
 
-/* =======
-Estilos de "dónde dormir
-======= */
+    /* ===================
+    Versión tablet: hasta 1024x de ancho
+    =================== */  
+    @media (max-width: 1024px) {
+
+        .limitar-ancho {
+            padding: 2rem 2rem;
+        }
+
+        .ajustar-ancho {
+            justify-content: space-between;
+            padding: 0rem 2rem;
+            width: auto;
+        }
+
+        footer {
+            display: block;
+        }
+
+    }
+
+    /* ===================
+    Versión tablet: hasta 480x de ancho
+    =================== */  
+    @media (max-width: 480px) {
+
+        .abv {
+            padding: 0rem 2rem;
+        }
+
+        .ajustar-ancho {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        nav ul {
+            justify-content: space-between;
+            width: auto;
+        }
+
+    }
