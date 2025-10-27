@@ -67,6 +67,12 @@ footer {
 Estilos del header
 ======= */
 
+.menu-puntos {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
 nav {
     padding: 2rem 0rem;
     background-color: #257c8a;
