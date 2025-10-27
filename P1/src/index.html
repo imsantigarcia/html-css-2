@@ -9,8 +9,7 @@
         <meta name="author" content="Santiago García">
         <link rel="icon" href="../src/assets/images/aerea.png" type="image/png" sizes="32x32">
         <title>Discover Reus</title>
-        <!--Hoja de estilos-->
-        <link rel="stylesheet" href="css/styles.css">
+        <!--Hoja de estilos <link rel="stylesheet" href="css/styles.css">-->
         <!--Tipografía-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +20,8 @@
         <!-- JS de AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap"></noscript>
+        <!-- Font Awesome desde CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     </head>
     <!--Body-->
     <body>
@@ -52,6 +53,24 @@
                         <li class="li-menu">
                             <a href="#dormir" class="">Dormir</a>
                         </li>
+
+                        <!--Redes sociales-->
+                        <div class="redes">
+                            <!--Facebook-->
+                            <a href="https://www.facebook.com/?locale=es_ES" target="_blank" aria-label="Ir a Facebook" class="">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+
+                            <!--Instagram-->
+                            <a href="https://www.instagram.com/" target="_blank" aria-label="Ir a Instagram" class="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <!--Youtube-->
+                            <a href="https://www.youtube.com/" target="_blank" aria-label="Ir a Youtube" class="">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
                     </ul>
                 </div>
             </nav>
@@ -281,5 +300,6 @@
     <script>
     AOS.init();
     </script>
+    <script type="module" src="./assets/scripts/main.js"></script>
     </body>
 </html>

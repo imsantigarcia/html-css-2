@@ -10,7 +10,10 @@
  * Write any other JavaScript below
  */
 
-+( function() {
++(function () {
   const university = "UOC";
   console.log(`Hello, ${university}!`);
-} )();
+})();
+
+// Importamos el archivo principal de Sass
+import "../styles/main.scss";
