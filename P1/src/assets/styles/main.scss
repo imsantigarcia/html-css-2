@@ -8,6 +8,9 @@
  */
 @use "dependencies";
 
+
+@use "../styles/base/global";
+
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
@@ -21,60 +24,3 @@
 /**
  * Do NOT include anything else in this file!
  */
-
-/* =======
-Ajustes generales
-======= */
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-.limitar-ancho {
-    max-width: 1240px;
-    margin: auto;
-}
-
-* {
-    font-family: "Inter";
-}
-
-.ajustar-ancho {
-    max-width: 1240px;
-    width: 100%;
-    margin: auto;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-}
-
-    /* ===================
-    Versión tablet: hasta 1024x de ancho
-    =================== */  
-    @media (max-width: 1024px) {
-
-        .limitar-ancho {
-            padding: 2rem 2rem;
-        }
-
-        .ajustar-ancho {
-            justify-content: space-between;
-            padding: 0rem 2rem;
-            width: auto;
-        }
-
-
-    }
-
-    /* ===================
-    Versión tablet: hasta 480x de ancho
-    =================== */  
-    @media (max-width: 480px) {
-
-        .ajustar-ancho {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-    }
