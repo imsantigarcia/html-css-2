@@ -1,0 +1,57 @@
+/* =======
+HEADER
+======= */
+
+.header__content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.header__nav {
+    padding: 2rem 0rem;
+    background-color: #257c8a;
+    color:white;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header__logo {
+    font-size: 1.4rem;
+}
+
+.header__menu {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.header__menu-link {
+    color:white;    
+    text-decoration: none;
+}
+
+.header__menu-item:hover {
+    text-decoration: underline;
+}
+
+.header__social {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.header__social-link {
+    color:white;
+}
+
+.header__link {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}

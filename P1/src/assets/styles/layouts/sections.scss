@@ -1,0 +1,62 @@
+/* =======
+SECTIONS
+======= */
+
+.section {
+    padding: 3rem 0rem;
+
+    /* === Elementos comunes === */
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__item {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        background-color: #f0b2702f;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    &__img {
+        border-radius: 5px;
+    }
+
+    /* === Productos tradicionales === */
+
+    &--productos {
+        .que-comer {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            background-color: #f0b2702f;
+            padding: 1.2rem;
+            border-radius: 5px;
+        }
+
+        .section__img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

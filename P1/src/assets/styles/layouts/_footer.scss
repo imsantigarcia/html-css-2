@@ -1,0 +1,23 @@
+/* =======
+FOOTER
+======= */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem 0rem;
+    background-color: black;
+    color:white;
+}
+
+    /* ===================
+    Versión tablet: hasta 1024x de ancho
+    =================== */  
+    @media (max-width: 1024px) {
+
+        .footer {
+            display: block;
+        }
+
+    }
