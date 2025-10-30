@@ -55,3 +55,10 @@ HEADER
     gap: 1rem;
     list-style: none;
 }
+
+    /* === Media query === */
+    @media (max-width: 1024px) {
+        .header__nav {
+            padding: 2rem 1rem;
+        }
+    }

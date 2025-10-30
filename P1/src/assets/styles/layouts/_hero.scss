@@ -49,6 +49,10 @@ HERO
     padding: 0.8rem 0.8rem;
     color: white;
     border-radius: 5px;
+
+    &:hover {
+        background-color: lighten(#304adb, 10%);
+    }
 }
 
 /* Vídeo */
@@ -61,10 +65,6 @@ HERO
     height: 100%;
     object-fit: cover;
     z-index: 0;
-}
-
-.hero__cta:hover {
-    background-color:#59878f;
 }
 
     /* ===================

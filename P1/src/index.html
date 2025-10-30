@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
         <!-- JS de AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap"></noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
         <!-- Font Awesome desde CDN -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     </head>
@@ -33,16 +33,14 @@
                 <div class="ajustar-ancho">
                     <div class="header__logo">
                         <!--Logo-->
+                        <a href="#menu" class="header__menu-link">
                         Discover
+                        </a>
                     </div>
                     <!--Container: menú y redes sociales-->
                     <div class="header__content">
                         <!--Menú-->
                         <ul class="header__menu">
-                            <!--Categoría-->
-                            <li class="header__menu-item">
-                                <a href="#inicio" class="header__menu-link">Inicio</a>
-                            </li>
                             <!--Detalle-->
                             <li class="header__menu-item">
                                 <a href="#rutas" class="header__menu-link">Rutas</a>
@@ -87,8 +85,8 @@
         <!--Main-->
         <main>
             <!--Above the folder-->
-            <section class="hero">
-                <video autoplay muted loop class="hero__video">
+            <section class="hero" id="menu">
+                <video autoplay muted loop class="hero__video" aria-hidden="true">
                     <source src="../src/assets/video/video.mp4">
                 </video>
                 <div class="hero__content">
@@ -116,7 +114,7 @@
                     <ul class="section__list">
                         <!--Elemento de lista 1: Casa Navàs-->
                         <li class="section__item">
-                            <img src="../src/assets/images/casa-navas.png" width="150" height="150" alt="Fotografía de la fachada frontal de la Casa Navàs en un día soleado" class="section__img" loading="lazy">
+                            <img src="../src/assets/images/casa-navas-150x150.webp" width="150" height="150" alt="Fotografía de la fachada frontal de la Casa Navàs en un día soleado" class="section__img" loading="lazy">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__item-title">La Casa Navàs</h3>
@@ -127,7 +125,7 @@
 
                         <!--Elemento de lista 2: General Prim-->
                         <li class="section__item">
-                            <img src="../src/assets/images/general-rim.png" width="150" height="150" alt="Fotografía de la estatua del General Prim en la Plaça Prim de Reus, con algunas nubes de fondo" class="section__img" loading="lazy">
+                            <img src="../src/assets/images/general-rim-150x150.webp" width="150" height="150" alt="Fotografía de la estatua del General Prim en la Plaça Prim de Reus, con algunas nubes de fondo" class="section__img" loading="lazy">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__item-title">General Prim</h3>
@@ -138,7 +136,7 @@
 
                         <!--Elemento de lista 3: Gaudí Centre-->
                         <li class="section__item">
-                            <img src="../src/assets/images/gaudi-centre.png" width="150" height="150" alt="Fotografía de la fachada frontal del Gaudí Centre, situado en la plaça Mercadal de Reus, un día soleado" class="section__img" loading="lazy">
+                            <img src="../src/assets/images/gaudi-centre-150x150.webp" width="150" height="150" alt="Fotografía de la fachada frontal del Gaudí Centre" class="section__img" loading="lazy">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__item-title">El Gaudí Centre</h3>
@@ -149,7 +147,7 @@
 
                         <!--Elemento de lista 4: Casa Serra-->
                         <li class="section__item">
-                            <img src="../src/assets/images/casa-serra.png" width="150" height="150" alt="Fotografía de la fachada frontal de la Casa Serra (Reus) al atardecer" class="section__img">
+                            <img src="../src/assets/images/casa-serra-150x150.webp" width="150" height="150" alt="Fotografía de la fachada frontal de la Casa Serra (Reus) al atardecer" class="section__img">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__item-title">La Casa Serra</h3>
@@ -160,7 +158,7 @@
 
                         <!--Elemento de lista 5: Institut Pere Mata-->
                         <li class="section__item">
-                            <img src="../src/assets/images/institut-pere.png" width="150" height="150" alt="Fotografía de perfil de la fachada del Institut Pee Mata. Se aprecia la vegetación de la entrada." class="section__img" loading="lazy">
+                            <img src="../src/assets/images/institut-pere-150x150.webp" width="150" height="150" alt="Fotografía de perfil de la fachada del Institut Pere Mata." class="section__img" loading="lazy">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__item-title">El Institut Pere Mata</h3>
@@ -171,7 +169,7 @@
 
                         <!--Elemento de lista 6: Prioral Sant Pere-->
                         <li class="section__item">
-                            <img src="../src/assets/images/sant-pere.png" width="150" height="150" alt="Fotografía de la prioral de Sant Pere de Reus al amanecer" class="section__img" loading="lazy">
+                            <img src="../src/assets/images/sant-pere-150x150.webp" width="150" height="150" alt="Fotografía de la prioral de Sant Pere de Reus" class="section__img" loading="lazy">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__item-title">La prioral Sant Pere</h3>
@@ -197,9 +195,23 @@
                     <!--Enumeración de elementos-->
                     <ul class="section__list">
                         <!--Elemento de lista 1: Menjablanc-->
-                        <li class="que-comer">
-                            <img src="../src/assets/images/mblanc.jpg" width="150" height="150" alt="Un vaso de postre en el que está servido el Menjablanc junto a una cuchara y un par de avellanas, sobre una mesa de madera" class="section__img" loading="lazy">
-                            <div class="que-ver-div">
+                        <li class="section__item">
+                            <img src="../src/assets/images/mblanc-354x354.webp" 
+                            srcset="
+                            ../src/assets/images/mblanc-410x410.webp 480w,
+                            ../src/assets/images/mblanc-442x442.webp 1024w"        
+                            sizes="
+                            (max-width: 480px) 80vw, 
+                            (max-width: 1024px) 40vw, 
+                            (max-width: 1280px) 30vw, 
+                            (max-width: 1920px) 25vw,
+                            20vw"
+                            width="150" 
+                            height="150" 
+                            alt="Un vaso de postre en el que está servido el Menjablanc junto a una cuchara." 
+                            class="section__img" 
+                            loading="lazy">
+                            <div class="section__content">
                               <!--H3-->
                               <h3 class="section__title">El menjablanc</h3>
                               <!--Descripción-->
@@ -208,9 +220,23 @@
                         </li>    
 
                         <!--Elemento de lista 2: Avellanas-->
-                        <li class="que-comer">
-                            <img src="../src/assets/images/avellanas.png" width="150" height="150" alt="Un puñado de avellanas de Reus sobre una mesa de madera y un saco de las mismas" class="section__img" loading="lazy">
-                            <div class="que-ver-div">
+                        <li class="section__item">
+                            <img src="../src/assets/images/avellanas-354x354.webp" 
+                            srcset="
+                            ../src/assets/images/avellanas-410x410.webp 480w,
+                            ../src/assets/images/avellanas-442x442.webp 1024w"
+                            sizes="
+                            (max-width: 480px) 80vw, 
+                            (max-width: 1024px) 40vw, 
+                            (max-width: 1280px) 30vw, 
+                            (max-width: 1920px) 25vw,
+                            20vw"
+                            width="150" 
+                            height="150" 
+                            alt="Un puñado de avellanas de Reus sobre una mesa de madera y un saco de las mismas" 
+                            class="section__img" 
+                            loading="lazy">
+                            <div class="section__content">
                               <!--H3-->
                               <h3 class="section__title">Las avellanas</h3>
                               <!--Descripción-->
@@ -219,9 +245,23 @@
                         </li>    
 
                         <!--Elemento de lista 3: Plim-->
-                        <li class="que-comer">
-                            <img src="../src/assets/images/plim.jpg" width="150" height="150" alt="Vaso y botellín de la Bebida Plim, en la que puede verse que el líquido es de color rojo intenso, sobre una mesa de madera" class="section__img" loading="lazy">
-                            <div class="que-ver-div">
+                        <li class="section__item">
+                            <img src="../src/assets/images/plim-354x354.webp"
+                            srcset="
+                            ../src/assets/images/plim-410x410.webp 480w,
+                            ../src/assets/images/plim-442x442.webp 1024w"
+                            sizes="
+                            (max-width: 480px) 80vw, 
+                            (max-width: 1024px) 40vw, 
+                            (max-width: 1280px) 30vw, 
+                            (max-width: 1920px) 25vw,
+                            20vw"
+                            width="150" 
+                            height="150" 
+                            alt="Vaso y botellín de la Bebida Plim, de color intenso." 
+                            class="section__img" 
+                            loading="lazy">
+                            <div class="section__content">
                               <!--H3-->
                               <h3 class="section__title">El refresco Plim</h3>
                               <!--Descripción-->
@@ -247,8 +287,8 @@
                     <ul class="section__list">
                         <!--Elemento de lista 1: Hotel Caselles-->
                         <li class="section__item">
-                            <img src="../src/assets/images/hotel1.png" width="150" height="150" alt="Fotografía de la fachada frontal del hotel Caselles, con un coche de época delante" class="que-ver-img" loading="lazy">
-                            <div class="section__img">
+                            <img src="../src/assets/images/hotel1-150x150.webp" width="150" height="150" alt="Fotografía de la fachada frontal del hotel Caselles, con un coche de época delante" class="section__img" loading="lazy">
+                            <div class="section__content">
                               <!--H3-->
                               <h3 class="section__title">El Hotel Caselles</h3>
                               <!--Descripción-->
@@ -258,8 +298,8 @@
 
                         <!--Elemento de lista 2: Hotel Gaudí-->
                         <li class="section__item">
-                            <img src="../src/assets/images/hotel2.png" width="150" height="150" alt="Atardecer sobre el Hotel Gaudí, en un paseo de palmeras, con algunas personas paseando por la acera" class="que-ver-img" loading="lazy">
-                            <div class="section__img">
+                            <img src="../src/assets/images/hotel2-150x150.webp" width="150" height="150" alt="Atardecer sobre el Hotel Gaudí, en un paseo de palmeras, con algunas personas paseando por la acera" class="section__img" loading="lazy">
+                            <div class="section__content">
                               <!--H3-->
                               <h3 class="section__title">El Hotel Gaudí</h3>
                               <!--Descripción-->
@@ -269,8 +309,13 @@
 
                         <!--Elemento de lista 3: Hotel Sugranyes-->
                         <li class="section__item">
-                            <img src="../src/assets/images/hotel3.png" width="150" height="150" alt="Fachada del hotel Sugranyes, con el tranvía cruzando de izquierda a derecha" class="que-ver-img" loading="lazy">
-                            <div class="section__img">
+                            <img src="../src/assets/images/hotel3-150x150.webp"
+                            width="150" 
+                            height="150" 
+                            alt="Fachada del hotel Sugranyes, con el tranvía cruzando de izquierda a derecha" 
+                            class="section__img" 
+                            loading="lazy">
+                            <div class="section__content">
                               <!--H3-->
                               <h3 class="section__title">El Hotel Sugranyes</h3>
                               <!--Descripción-->

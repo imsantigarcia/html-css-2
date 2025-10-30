@@ -7,11 +7,6 @@ Ajustes generales
     padding: 0px;
 }
 
-.limitar-ancho {
-    max-width: 1240px;
-    margin: auto;
-}
-
 * {
     font-family: "Inter";
 }
@@ -24,23 +19,6 @@ Ajustes generales
     display: flex;
     align-items: center;
 }
-
-    /* ===================
-    Versión tablet: hasta 1024x de ancho
-    =================== */  
-    @media (max-width: 1024px) {
-
-        .limitar-ancho {
-            padding: 2rem 2rem;
-        }
-
-        .ajustar-ancho {
-            justify-content: space-between;
-            padding: 0rem 2rem;
-            width: auto;
-        }
-
-    }
 
     /* ===================
     Versión tablet: hasta 480x de ancho
