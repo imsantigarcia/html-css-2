@@ -75,4 +75,18 @@ HERO
         .hero__content {
             padding: 0rem 2rem;
         }
+
+    /* ===================
+    Versión móvil pequeño: hasta 320x de ancho
+    =================== */  
+    @media (max-width: 320px) {
+
+        .hero__content {
+            padding: 0rem 2rem;
+        }
+
+        .hero {
+            height: 550px;
+        }
     }
+}

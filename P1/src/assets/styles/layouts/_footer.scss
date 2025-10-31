@@ -20,5 +20,16 @@ FOOTER
             display: block;
             padding: 3rem 1rem;
         }
+    } 
+
+        
+    /* ===================
+    Versión móvil pequeño: hasta 380 de ancho
+    =================== */  
+    @media (max-width: 320px) {
+
+        .footer {
+            box-sizing: border-box;
+        }
 
     }
