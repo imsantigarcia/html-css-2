@@ -3,23 +3,22 @@
  * Do not include SCSS code in this file.
  */
 
- /**
+/**
  * Import dependencies
  */
-@use "dependencies";
-
-
-@use "../styles/base/global";
+@use "./dependencies";
+@use "./base/global";
+@use "./variables";
+@use "./functions" as *;
 
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
-
-@use "../styles/layouts/header";
-@use "../styles/layouts/hero";
-@use "../styles/layouts/footer";
-@use "layouts/sections";
+@use "./layouts/header";
+@use "./layouts/hero";
+@use "./layouts/footer";
+@use "./layouts/sections";
 
 /**
  * Do NOT include anything else in this file!

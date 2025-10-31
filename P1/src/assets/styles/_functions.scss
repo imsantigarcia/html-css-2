@@ -1,0 +1,8 @@
+// Función para obtener colores del mapa
+@use "sass:map";
+@use "./variables" as *;
+
+@function get-color($name) {
+  @return map.get($colors, $name);
+}
+

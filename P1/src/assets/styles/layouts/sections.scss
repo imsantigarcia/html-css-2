@@ -1,3 +1,5 @@
+@use "../functions" as *;
+
 /* =======
 SECTIONS
 ======= */
@@ -19,7 +21,7 @@ SECTIONS
         display: flex;
         gap: 1rem;
         align-items: center;
-        background-color: #f0b2702f;
+        background-color: get-color("section-bg");
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -75,7 +77,7 @@ SECTIONS
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            background-color: #f0b2702f;
+            background-color: get-color("section-bg");;
             padding: 1.2rem;
             border-radius: 5px;
             align-items: left;

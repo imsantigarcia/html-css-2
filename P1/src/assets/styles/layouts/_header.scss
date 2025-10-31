@@ -1,3 +1,5 @@
+@use "../functions" as *;
+
 /* =======
 HEADER
 ======= */
@@ -10,8 +12,8 @@ HEADER
 
 .header__nav {
     padding: 2rem 0rem;
-    background-color: #257c8a;
-    color:white;
+    background-color: get-color("header-bg");
+    color:get-color("footer-text")
 }
 
 .header {
@@ -32,7 +34,7 @@ HEADER
 }
 
 .header__menu-link {
-    color:white;    
+    color:get-color("footer-text");    
     text-decoration: none;
 }
 
@@ -47,7 +49,7 @@ HEADER
 }
 
 .header__social-link {
-    color:white;
+    color:get-color("footer-text");
 }
 
 .header__link {

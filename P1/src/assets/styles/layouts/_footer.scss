@@ -1,3 +1,5 @@
+@use "../functions" as *;
+
 /* =======
 FOOTER
 ======= */
@@ -7,8 +9,8 @@ FOOTER
     justify-content: space-between;
     width: 100%;
     padding: 3rem 0rem;
-    background-color: black;
-    color:white;
+    background-color: get-color("footer-bg");;
+    color:get-color("footer-text");
 }
 
     /* ===================
