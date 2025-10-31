@@ -17,8 +17,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
         <!-- CSS de AOS -->
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-        <!-- JS de AOS -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
         <!-- Font Awesome desde CDN -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
@@ -86,8 +84,32 @@
         <main>
             <!--Above the folder-->
             <section class="hero" id="menu">
-                <video autoplay muted loop class="hero__video" aria-hidden="true">
-                    <source src="../src/assets/video/video.mp4">
+                <video 
+                autoplay 
+                muted 
+                loop 
+                class="hero__video" 
+                aria-hidden="true">
+                    <!--1920-->
+                    <source src="../src/assets/video/video1920.mp4"
+                    type="video/mp4"
+                    media="(min-width: 1920px)">
+                    <!--1024-->
+                    <source src="../src/assets/video/video1024.mp4"
+                    type="video/mp4"
+                    media="(min-width: 1024px)">
+                    <!--720-->
+                    <source src="../src/assets/video/video720.mp4"
+                    type="video/mp4"
+                    media="(min-width: 720px)">
+                    <!--480-->
+                    <source src="../src/assets/video/video480.mp4"
+                    type="video/mp4"
+                    media="(min-width: 480px)">
+                    <!--380-->
+                    <source src="../src/assets/video/video380.mp4"
+                    type="video/mp4"
+                    media="(max-width: 479px)">
                 </video>
                 <div class="hero__content">
                     <!--H1-->
@@ -337,6 +359,8 @@
         </div>
     </footer>
     <!--Script de AOS-->
+    <!-- JS de AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     AOS.init();
     </script>
