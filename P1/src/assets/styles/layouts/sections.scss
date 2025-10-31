@@ -58,6 +58,8 @@ SECTIONS
 
     &__img {
         border-radius: 5px;
+        width: 150px;
+        height: 150px;
 
         /* Adaptación a 360px */
         @media (max-width: 360px) {
