@@ -17,18 +17,21 @@ SECTIONS
 
     &__item {
         display: flex;
-        flex-direction: column;
         gap: 1rem;
         align-items: center;
         background-color: #f0b2702f;
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        padding: 2rem;
 
         &:hover {
             transform: translateY(-5px);
             box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 10px;
+        }
+
+        @media (max-width: 360px) {
+        flex-direction: column;
+        padding: 1rem 1rem;
         }
     }
 
@@ -41,15 +44,26 @@ SECTIONS
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 1rem;
         column-gap: 2rem;
         row-gap: 2rem;
         margin-top: 2rem;
+
+        @media (max-width: 360px) {
+        /* Adaptación a 360px */
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
     }
 
     &__img {
         border-radius: 5px;
+
+        /* Adaptación a 360px */
+        @media (max-width: 360px) {
+        width: 100%;
+        height: auto;
+        }
     }
 
     /* === Productos tradicionales === */
@@ -75,11 +89,5 @@ SECTIONS
     @media (max-width: 1024px) {
         padding: 3rem 1rem;
     }
-
-    /* === Media query === */
-    @media (max-width: 480px) {
-        padding: 3rem 1rem;
-    }
-
 
 }

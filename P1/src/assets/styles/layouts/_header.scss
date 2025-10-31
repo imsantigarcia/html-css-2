@@ -63,7 +63,7 @@ HEADER
         }    
 
     /* === Media query 320px === */
-    @media (max-width: 320px) {
+    @media (max-width: 360px) {
     .header__content {
         flex-direction: column;
         gap: 1rem;

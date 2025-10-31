@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Guía visual para descubrir Reus: rutas, gastronomía y alojamiento">
         <meta name="author" content="Santiago García">
-        <link rel="icon" href="../src/assets/images/aerea.png" type="image/png" sizes="32x32">
+        <link rel="icon" href="./assets/images/aerea.png" type="image/png" sizes="32x32">
         <title>Discover Reus</title>
         <!--Hoja de estilos <link rel="stylesheet" href="css/styles.css">-->
         <!--Tipografía-->
@@ -92,27 +92,27 @@
                 class="hero__video" 
                 aria-hidden="true">
                     <!--1920-->
-                    <source src="../src/assets/video/video1920.mp4"
+                    <source src="./assets/video/video1920.mp4"
                     type="video/mp4"
                     media="(min-width: 1920px)">
                     <!--1280-->
-                    <source src="../src/assets/video/video1280.mp4"
+                    <source src="./assets/video/video1280.mp4"
                     type="video/mp4"
                     media="(min-width: 1280px)">
                     <!--1024-->
-                    <source src="../src/assets/video/video1024.mp4"
+                    <source src="./assets/video/video1024.mp4"
                     type="video/mp4"
                     media="(min-width: 1024px)">
                     <!--720-->
-                    <source src="../src/assets/video/video720.mp4"
+                    <source src="./assets/video/video720.mp4"
                     type="video/mp4"
                     media="(min-width: 720px)">
                     <!--480-->
-                    <source src="../src/assets/video/video480.mp4"
+                    <source src="./assets/video/video480.mp4"
                     type="video/mp4"
                     media="(min-width: 480px)">
                     <!--380-->
-                    <source src="../src/assets/video/video380.mp4"
+                    <source src="./assets/video/video380.mp4"
                     type="video/mp4"
                     media="(max-width: 479px)">
                 </video>
@@ -141,7 +141,19 @@
                     <ul class="section__list">
                         <!--Elemento de lista 1: Casa Navàs-->
                         <li class="section__item">
-                            <img src="../src/assets/images/casa-navas-150x150.webp" width="150" height="150" alt="Fotografía de la fachada frontal de la Casa Navàs en un día soleado" class="section__img" loading="lazy">
+                            <img src="./assets/images/casa-navas-150x150.webp" 
+                            srcset="
+                            ./assets/images/casa-navas-289x289.webp 480w,
+                            ./assets/images/casa-navas-150x150.webp 1024w"        
+                            sizes=" 
+                            (max-width: 320px) 80vw, 
+                            (max-width: 1920px) 25vw,
+                            20vw"
+                            width="150" 
+                            height="150" 
+                            alt="Fotografía de la fachada frontal de la Casa Navàs en un día soleado" class="section__img" 
+                            loading="lazy"
+                            decoding="async">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__item-title">La Casa Navàs</h3>
@@ -152,7 +164,19 @@
 
                         <!--Elemento de lista 2: General Prim-->
                         <li class="section__item">
-                            <img src="../src/assets/images/general-rim-150x150.webp" width="150" height="150" alt="Fotografía de la estatua del General Prim en la Plaça Prim de Reus, con algunas nubes de fondo" class="section__img" loading="lazy">
+                            <img src="./assets/images/general-rim-150x150.webp" 
+                            srcset="
+                            ./assets/images/general-rim-289x289.webp 480w,
+                            ./assets/images/general-rim-150x150.webp 1024w"        
+                            sizes=" 
+                            (max-width: 320px) 80vw, 
+                            (max-width: 1920px) 25vw,
+                            20vw"
+                            width="150" 
+                            height="150" 
+                            alt="Fotografía de la estatua del General Prim en la Plaça Prim de Reus, con algunas nubes de fondo" 
+                            class="section__img" 
+                            loading="lazy">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__item-title">General Prim</h3>
@@ -163,7 +187,19 @@
 
                         <!--Elemento de lista 3: Gaudí Centre-->
                         <li class="section__item">
-                            <img src="../src/assets/images/gaudi-centre-150x150.webp" width="150" height="150" alt="Fotografía de la fachada frontal del Gaudí Centre" class="section__img" loading="lazy">
+                            <img src="./assets/images/gaudi-centre-150x150.webp" 
+                            srcset="
+                            ./assets/images/gaudi-centre-289x289.webp 480w,
+                            ./assets/images/gaudi-centre-150x150.webp 1024w"        
+                            sizes=" 
+                            (max-width: 320px) 80vw, 
+                            (max-width: 1920px) 25vw,
+                            20vw"
+                            width="150" 
+                            height="150" 
+                            alt="Fotografía de la fachada frontal del Gaudí Centre" 
+                            class="section__img" 
+                            loading="lazy">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__item-title">El Gaudí Centre</h3>
@@ -174,7 +210,17 @@
 
                         <!--Elemento de lista 4: Casa Serra-->
                         <li class="section__item">
-                            <img src="../src/assets/images/casa-serra-150x150.webp" width="150" height="150" alt="Fotografía de la fachada frontal de la Casa Serra (Reus) al atardecer" class="section__img">
+                            <img src="./assets/images/casa-serra-150x150.webp"
+                            srcset="
+                            ./assets/images/casa-serra-289x289.webp 480w,
+                            ./assets/images/casa-serra-150x150.webp 1024w"        
+                            sizes=" 
+                            (max-width: 320px) 80vw, 
+                            (max-width: 1920px) 25vw,
+                            20vw" 
+                            width="150" 
+                            height="150" 
+                            alt="Fotografía de la fachada frontal de la Casa Serra (Reus) al atardecer" class="section__img">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__item-title">La Casa Serra</h3>
@@ -185,7 +231,19 @@
 
                         <!--Elemento de lista 5: Institut Pere Mata-->
                         <li class="section__item">
-                            <img src="../src/assets/images/institut-pere-150x150.webp" width="150" height="150" alt="Fotografía de perfil de la fachada del Institut Pere Mata." class="section__img" loading="lazy">
+                            <img src="./assets/images/institut-pere-150x150.webp"
+                            srcset="
+                            ./assets/images/institut-pere-289x289.webp 480w,
+                            ./assets/images/institut-pere-150x150.webp 1024w"        
+                            sizes=" 
+                            (max-width: 320px) 80vw, 
+                            (max-width: 1920px) 25vw,
+                            20vw" 
+                            width="150" 
+                            height="150" 
+                            alt="Fotografía de perfil de la fachada del Institut Pere Mata." 
+                            class="section__img" 
+                            loading="lazy">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__item-title">El Institut Pere Mata</h3>
@@ -196,7 +254,19 @@
 
                         <!--Elemento de lista 6: Prioral Sant Pere-->
                         <li class="section__item">
-                            <img src="../src/assets/images/sant-pere-150x150.webp" width="150" height="150" alt="Fotografía de la prioral de Sant Pere de Reus" class="section__img" loading="lazy">
+                            <img src="./assets/images/sant-pere-150x150.webp"
+                            srcset="
+                            ./assets/images/sant-pere-289x289.webp 480w,
+                            ./assets/images/sant-pere-150x150.webp 1024w"        
+                            sizes=" 
+                            (max-width: 320px) 80vw, 
+                            (max-width: 1920px) 25vw,
+                            20vw"  
+                            width="150" 
+                            height="150" 
+                            alt="Fotografía de la prioral de Sant Pere de Reus" 
+                            class="section__img" 
+                            loading="lazy">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__item-title">La prioral Sant Pere</h3>
@@ -223,11 +293,11 @@
                     <ul class="section__list">
                         <!--Elemento de lista 1: Menjablanc-->
                         <li class="section__item">
-                            <img src="../src/assets/images/mblanc-354x354.webp" 
+                            <img src="./assets/images/mblanc-354x354.webp" 
                             srcset="
-                            ../src/assets/images/mblanc-410x410.webp 480w,
-                            ../src/assets/images/mblanc-442x442.webp 1024w"        
-                            sizes="
+                            ./assets/images/mblanc-410x410.webp 480w,
+                            ./assets/images/mblanc-442x442.webp 1024w"        
+                            sizes=" 
                             (max-width: 480px) 80vw, 
                             (max-width: 1024px) 40vw, 
                             (max-width: 1280px) 30vw, 
@@ -248,11 +318,12 @@
 
                         <!--Elemento de lista 2: Avellanas-->
                         <li class="section__item">
-                            <img src="../src/assets/images/avellanas-354x354.webp" 
+                            <img src="./assets/images/avellanas-354x354.webp" 
                             srcset="
-                            ../src/assets/images/avellanas-410x410.webp 480w,
-                            ../src/assets/images/avellanas-442x442.webp 1024w"
+                            ./assets/images/avellanas-410x410.webp 480w,
+                            ./assets/images/avellanas-442x442.webp 1024w"
                             sizes="
+                            (max-width: 320px) 90vw,
                             (max-width: 480px) 80vw, 
                             (max-width: 1024px) 40vw, 
                             (max-width: 1280px) 30vw, 
@@ -273,10 +344,10 @@
 
                         <!--Elemento de lista 3: Plim-->
                         <li class="section__item">
-                            <img src="../src/assets/images/plim-354x354.webp"
+                            <img src="./assets/images/plim-354x354.webp"
                             srcset="
-                            ../src/assets/images/plim-410x410.webp 480w,
-                            ../src/assets/images/plim-442x442.webp 1024w"
+                            ./assets/images/plim-410x410.webp 480w,
+                            ./assets/images/plim-442x442.webp 1024w"
                             sizes="
                             (max-width: 480px) 80vw, 
                             (max-width: 1024px) 40vw, 
@@ -314,7 +385,18 @@
                     <ul class="section__list">
                         <!--Elemento de lista 1: Hotel Caselles-->
                         <li class="section__item">
-                            <img src="../src/assets/images/hotel1-150x150.webp" width="150" height="150" alt="Fotografía de la fachada frontal del hotel Caselles, con un coche de época delante" class="section__img" loading="lazy">
+                            <img src="./assets/images/hotel1-150x150.webp"
+                             srcset="
+                            ./assets/images/hotel1-289x289.webp 480w,
+                            ./assets/images/hotel1-150x150.webp 1024w"        
+                            sizes=" 
+                            (max-width: 320px) 80vw, 
+                            (max-width: 1920px) 25vw,
+                            20vw"
+                            width="150" 
+                            height="150" 
+                            alt="Fotografía de la fachada frontal del hotel Caselles, con un coche de época delante" class="section__img" 
+                            loading="lazy">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__title">El Hotel Caselles</h3>
@@ -325,7 +407,19 @@
 
                         <!--Elemento de lista 2: Hotel Gaudí-->
                         <li class="section__item">
-                            <img src="../src/assets/images/hotel2-150x150.webp" width="150" height="150" alt="Atardecer sobre el Hotel Gaudí, en un paseo de palmeras, con algunas personas paseando por la acera" class="section__img" loading="lazy">
+                            <img src="./assets/images/hotel2-150x150.webp"
+                            srcset="
+                            ./assets/images/hotel2-289x289.webp 480w,
+                            ./assets/images/hotel2-150x150.webp 1024w"        
+                            sizes=" 
+                            (max-width: 320px) 80vw, 
+                            (max-width: 1920px) 25vw,
+                            20vw" 
+                            width="150" 
+                            height="150" 
+                            alt="Atardecer sobre el Hotel Gaudí, en un paseo de palmeras, con algunas personas paseando por la acera" 
+                            class="section__img" 
+                            loading="lazy">
                             <div class="section__content">
                               <!--H3-->
                               <h3 class="section__title">El Hotel Gaudí</h3>
@@ -336,7 +430,14 @@
 
                         <!--Elemento de lista 3: Hotel Sugranyes-->
                         <li class="section__item">
-                            <img src="../src/assets/images/hotel3-150x150.webp"
+                            <img src="./assets/images/hotel3-150x150.webp"
+                            srcset="
+                            ./assets/images/hotel3-289x289.webp 480w,
+                            ./assets/images/hotel3-150x150.webp 1024w"        
+                            sizes=" 
+                            (max-width: 320px) 80vw, 
+                            (max-width: 1920px) 25vw,
+                            20vw"
                             width="150" 
                             height="150" 
                             alt="Fachada del hotel Sugranyes, con el tranvía cruzando de izquierda a derecha" 
