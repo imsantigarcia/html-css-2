@@ -7,14 +7,58 @@ HERO
 /* Hero */
 
 .hero {
-    padding-top: 0px;
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    background-color: get-color("background");
-    margin-top: 0px;
-    position: relative;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  position: relative;
+  margin-top: 0;
+
+/* Fallback */
+  background-image: url("../images/prim-1280w.webp");
+
+  /* Fondo responsive usando image-set */
+  background-image: -webkit-image-set(
+    url("../images/prim-320w.webp") type("image/webp") 320w,
+    url("../images/prim-480w.webp") type("image/webp") 480w,
+    url("../images/prim-720w.webp") type("image/webp") 720w,
+    url("../images/prim-1024w.webp") type("image/webp") 1024w,
+    url("../images/prim-1280w.webp") type("image/webp") 1280w,
+    url("../images/prim-1920w.webp") type("image/webp") 1920w
+  );
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+
+  /* Capa oscura */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+  }
 }
+
+.hero__title {
+    color:get-color("background");
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+    font-size: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+.hero__description {
+    color:get-color("background");
+    background: rgba(0, 0, 0, 0.55);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    z-index: 1;
+    }
 
 /* Capa blanca */
 

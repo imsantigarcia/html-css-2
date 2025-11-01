@@ -22,25 +22,36 @@
         />
         <!-- CSS de AOS -->
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <!--Animate.css-->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <!-- Font Awesome desde CDN -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     </head>
     <!--Body-->
     <body>
         <!--Header-->
-        <header class="header">
+        <header class="header" data-aos="fade-in">
             <!--Navegación-->
             <nav aria-label="Menú principal" class="header__nav">
                 <!--Contenedor Logo/SVG-->
                 <div class="ajustar-ancho">
-                    <div class="header__logo">
+                    <div class="header__logo animate__animated animate__fadeInDown">
                         <!--Logo-->
                         <a href="#menu" class="header__menu-link">
                         Discover
                         </a>
                     </div>
+                    <!--Botón de hamburguesa-->
+                    <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <!--Container: menú y redes sociales-->
-                    <div class="header__content">
+                    <div class="header__content animate__animated animate__fadeInDown">
                         <!--Menú-->
                         <ul class="header__menu">
                             <!--Detalle-->
@@ -58,7 +69,7 @@
                         </ul>
 
                             <!--Redes sociales-->
-                            <ul class="header__social">
+                            <ul class="header__social animate__animated animate__fadeInDown">
                                 <!--Facebook-->
                                 <li class="header__social-item">
                                     <a href="https://www.facebook.com/?locale=es_ES" target="_blank" aria-label="Ir a Facebook" class="header__social-link">
@@ -87,40 +98,8 @@
         <!--Main-->
         <main>
             <!--Above the folder-->
-            <section class="hero" id="menu">
-                <!--Vídeo de fondo-->
-                <video 
-                autoplay 
-                muted 
-                loop 
-                class="hero__video" 
-                aria-hidden="true">
-                    <!--1920-->
-                    <source src="./assets/video/video1920.mp4"
-                    type="video/mp4"
-                    media="(min-width: 1920px)">
-                    <!--1280-->
-                    <source src="./assets/video/video1280.mp4"
-                    type="video/mp4"
-                    media="(min-width: 1280px)">
-                    <!--1024-->
-                    <source src="./assets/video/video1024.mp4"
-                    type="video/mp4"
-                    media="(min-width: 1024px)">
-                    <!--720-->
-                    <source src="./assets/video/video720.mp4"
-                    type="video/mp4"
-                    media="(min-width: 720px)">
-                    <!--480-->
-                    <source src="./assets/video/video480.mp4"
-                    type="video/mp4"
-                    media="(min-width: 480px)">
-                    <!--380-->
-                    <source src="./assets/video/video380.mp4"
-                    type="video/mp4"
-                    media="(max-width: 479px)">
-                </video>
-                <div class="hero__content">
+            <section class="hero" id="menu" data-aos="fade-in"> 
+                <div class="hero__content animate__animated animate__fadeInDown">
                     <!--H1-->
                     <h1 class="hero__title">Descubre Reus, la capital del Baix Camp</h1>
                     <!--Descripción-->
