@@ -5,22 +5,21 @@ FOOTER
 ======= */
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 3rem 0rem;
-    background-color: get-color("footer-bg");
-    color:get-color("footer-text");
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3rem 0;
+  background-color: get-color("footer-bg");
+  color: get-color("footer-text");
 }
 
-    /* ===================
+/* ===================
     Versión tablet: hasta 1024x de ancho
-    =================== */  
-    @media (max-width: 1024px) {
-
-        .footer {
-            display: block;
-            box-sizing: border-box;
-            padding: 3rem 1rem;
-        }
-    } 
+    =================== */
+@media (max-width: 1024px) {
+  .footer {
+    display: block;
+    box-sizing: border-box;
+    padding: 3rem 1rem;
+  }
+}

@@ -27,9 +27,11 @@ HEADER
   &.active span:nth-child(1) {
     transform: translateY(7.5px) rotate(45deg);
   }
+
   &.active span:nth-child(2) {
     opacity: 0;
   }
+
   &.active span:nth-child(3) {
     transform: translateY(-7.5px) rotate(-45deg);
   }

@@ -16,19 +16,19 @@ HERO
   position: relative;
   margin-top: 0;
 
-/* Fallback */
+  /* Fallback */
   background-image: url("../images/prim-1280w.webp");
 
   /* Fondo responsive usando image-set */
-  background-image: -webkit-image-set(
-    url("../images/prim-320w.webp") type("image/webp") 320w,
-    url("../images/prim-480w.webp") type("image/webp") 480w,
-    url("../images/prim-720w.webp") type("image/webp") 720w,
-    url("../images/prim-1024w.webp") type("image/webp") 1024w,
-    url("../images/prim-1280w.webp") type("image/webp") 1280w,
-    url("../images/prim-1920w.webp") type("image/webp") 1920w
-  );
-
+  background-image:
+    image-set(
+      url("../images/prim-320w.webp") type("image/webp") 320w,
+      url("../images/prim-480w.webp") type("image/webp") 480w,
+      url("../images/prim-720w.webp") type("image/webp") 720w,
+      url("../images/prim-1024w.webp") type("image/webp") 1024w,
+      url("../images/prim-1280w.webp") type("image/webp") 1280w,
+      url("../images/prim-1920w.webp") type("image/webp") 1920w
+    );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,93 +45,90 @@ HERO
 }
 
 .hero__title {
-    color:get-color("secondary");
-    background: get-color("text-shadow");
-    z-index: 1;
-    font-size: 2rem;
-    }
+  color: get-color("secondary");
+  background: get-color("text-shadow");
+  z-index: 1;
+  font-size: 2rem;
+}
 
 .hero__description {
-    color:get-color("secondary");
-    background: get-color("text-shadow");
-    font-size: 1.4rem;
-    z-index: 1;
-    }
+  color: get-color("secondary");
+  background: get-color("text-shadow");
+  font-size: 1.4rem;
+  z-index: 1;
+}
 
 /* Capa blanca */
 
 .hero::after {
-    content:"";
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: get-color("overlay-light");
-    z-index: 0.5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: get-color("overlay-light");
+  z-index: 0.5;
 }
 
 /* Div del hero */
 
 .hero__content {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
-    gap: 1rem;
-    z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  gap: 1rem;
+  z-index: 1;
 }
 
 /* Llamada a la acción */
 
 .hero__cta {
-    display: inline-block;
-    width: max-content;
-    margin: auto;
-    text-decoration: none;
-    background-color: get-color("primary");
-    padding: 0.8rem 0.8rem;
-    color: white;
-    border-radius: 5px;
+  display: inline-block;
+  width: max-content;
+  margin: auto;
+  text-decoration: none;
+  background-color: get-color("primary");
+  padding: 0.8rem;
+  color: get-color("footer-text");
+  border-radius: 5px;
 
-    &:hover {
-        background-color: lighten(#304adb, 10%);
-    }
+  &:hover {
+    background-color: lighten(#304adb, 10%);
+  }
 }
 
 /* Vídeo */
 
 .hero__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
-    /* ===================
+/* ===================
     Versión tablet: hasta 480x de ancho
-    =================== */  
-    @media (max-width: 480px) {
+    =================== */
+@media (max-width: 480px) {
+  .hero__content {
+    padding: 0 2rem;
+  }
 
-        .hero__content {
-            padding: 0rem 2rem;
-        }
-    
-
-    /* ===================
+  /* ===================
     Versión móvil pequeño: hasta 320x de ancho
-    =================== */  
-    @media (max-width: 320px) {
-
-        .hero__content {
-            padding: 0rem 2rem;
-        }
-
-        .hero {
-            height: 550px;
-        }
+    =================== */
+  @media (max-width: 320px) {
+    .hero__content {
+      padding: 0 2rem;
     }
+
+    .hero {
+      height: 550px;
+    }
+  }
 }
