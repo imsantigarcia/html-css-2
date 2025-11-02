@@ -3,16 +3,44 @@
     "stylelint-config-standard-scss",
     "stylelint-config-prettier"
   ],
-  "plugins": ["stylelint-scss"],
+  "plugins": ["stylelint-selector-bem-pattern"],
   "rules": {
+
+    "plugin/selector-bem-pattern": null,
     "selector-class-pattern": [
-      "^[a-z0-9\\-]+(__[a-z0-9\\-]+)?(--[a-z0-9\\-]+)?$",
+      "^[a-z0-9\\-_]+$",
       {
-        "message": "Usa convención BEM para las clases"
+        "resolveNestedSelectors": true,
+        "message": "Usa nombres de clase en kebab-case o estilo BEM (bloque__elemento--modificador)."
       }
     ],
-    "max-nesting-depth": 3,
+
+
+    "indentation": 2,
+    "max-empty-lines": 1,
+    "no-missing-end-of-source-newline": true,
+    "no-eol-whitespace": true,
+    "color-hex-length": "short",
     "color-named": "never",
-    "declaration-no-important": true
+    "length-zero-no-unit": true,
+    "color-function-notation": null,
+    "alpha-value-notation": null,
+    "scss/no-global-function-names": null,
+
+    "rule-empty-line-before": [
+      "always-multi-line",
+      { "except": ["first-nested"], "ignore": ["after-comment"] }
+    ],
+    "declaration-colon-space-after": "always-single-line",
+    "declaration-colon-newline-after": "always-multi-line",
+    "shorthand-property-no-redundant-values": true,
+    "font-family-name-quotes": "always-unless-keyword",
+    "font-family-no-missing-generic-family-keyword": null,
+    "unit-no-unknown": [
+      true,
+      {
+        "ignoreUnits": ["w"]
+      }
+    ]
   }
 }

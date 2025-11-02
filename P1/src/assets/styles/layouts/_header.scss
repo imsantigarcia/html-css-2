@@ -19,7 +19,7 @@ HEADER
   span {
     display: block;
     height: 3px;
-    background: white; // o #fff según tema
+    background: get-color("footer-text");
     border-radius: 3px;
     transition: 0.3s ease;
   }
@@ -90,6 +90,11 @@ HEADER
   list-style: none;
 }
 
+.header__logo-link {
+  color: get-color("footer-text");
+  text-decoration: none;
+}
+
 /* ==========================
    Menú responsive móvil
 ========================== */
@@ -123,7 +128,7 @@ HEADER
   }
 
   .header__menu-link {
-    color: #fff;
+    color: get-color("footer-text");
     font-size: 1.2rem;
   }
 

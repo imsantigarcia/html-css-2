@@ -39,23 +39,21 @@ HERO
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(82, 82, 82, 0.65);
     z-index: 0;
   }
 }
 
 .hero__title {
-    color:get-color("background");
-    background: rgba(0, 0, 0, 0.55);
+    color:get-color("secondary");
+    background: get-color("text-shadow");
     z-index: 1;
     font-size: 2rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
     }
 
 .hero__description {
-    color:get-color("background");
-    background: rgba(0, 0, 0, 0.55);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    color:get-color("secondary");
+    background: get-color("text-shadow");
     font-size: 1.4rem;
     z-index: 1;
     }
@@ -69,7 +67,7 @@ HERO
     left:0;
     width: 100%;
     height: 100%;
-    background: rgba(255,255,255, 0.35);
+    background: get-color("overlay-light");
     z-index: 0.5;
 }
 
@@ -121,6 +119,7 @@ HERO
         .hero__content {
             padding: 0rem 2rem;
         }
+    
 
     /* ===================
     Versión móvil pequeño: hasta 320x de ancho

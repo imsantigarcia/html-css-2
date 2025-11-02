@@ -1,12 +1,14 @@
 @use "sass:color";
 
-// 🎨 Paleta global de colores
+// Paleta global de colores
 $colors: (
   // Base
-  "primary": #000078, // azul principal (puedes ajustar el tono si es muy oscuro)
-  "secondary": #752641, // borgoña del header
+  "primary": #000078,
+  "secondary": #752641,
   "background": #f9f9f9,
   "text": #222,
+  "overlay-dark": rgba(0, 0, 0, 0.55),
+  "overlay-light": rgba(255, 255, 255, 0.35),
 
   // Header & Footer
   "header-bg": #752641,
@@ -14,11 +16,15 @@ $colors: (
   "footer-text": #fff,
 
   // Secciones
-  "section-bg": #f0b2702f, // color de fondo semitransparente de las cards
-  "section-shadow": rgba(0, 0, 0, 0.1),
+  "section-bg": #f0b2702f,
 
   // Acciones y estados
-  "hover-shadow": rgba(0, 0, 0, 0.15),
+  "hover-shadow": unquote("rgba(0, 0, 0, 0.15)"),
   "link": #ffffff,
-  "link-hover": #dcdcdc
+  "link-hover": #dcdcdc,
+
+  // Sombras
+  "section-shadow": unquote("rgba(0, 0, 0, 0.1)"),
+  "section-shadow-hover": unquote("rgba(0, 0, 0, 0.15)"),
+  "text-shadow": unquote("2px 2px 4px rgba(0, 0, 0, 0.8)")
 );
